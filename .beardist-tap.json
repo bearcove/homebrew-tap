@@ -1,13 +1,6 @@
 {
   "formulas": [
     {
-      "repo": "bearcove/beardist",
-      "homepage": "https://github.com/bearcove/beardist",
-      "desc": "Wrapper around cargo, ships bearcove binaries",
-      "license": "Proprietary",
-      "bins": ["beardist"]
-    },
-    {
       "repo": "bearcove/home",
       "homepage": "https://github.com/bearcove/home",
       "desc": "A cozy content authoring experience",

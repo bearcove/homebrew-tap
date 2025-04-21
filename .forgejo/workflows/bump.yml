@@ -1,27 +1,27 @@
 name: bump
 on:
-    workflow_dispatch:
-    push:
-        branches: [main]
+  workflow_dispatch:
+  push:
+    branches: [main]
 jobs:
-    update:
-        runs-on: linux-amd64
-        container:
-            image: code.bearcove.cloud/bearcove/beardist:latest
-            volumes:
-                - /var/persistent-build-storage:/var/persistent-build-storage
-            credentials:
-                username: "token"
-                password: "${{ secrets.BEARCOVE_PULL_PASSWORD }}"
-        env:
-            BEARDIST_CACHE_DIR: /var/persistent-build-storage/beardist-cache
-            FORGEJO_READWRITE_TOKEN: ${{ secrets.FORGEJO_READWRITE_TOKEN }}
-            CLICOLOR: 1
-            CLICOLOR_FORCE: 1
-        steps:
-            - name: Check out repository code
-              uses: actions/checkout@v4
-            - name: Build
-              shell: bash
-              run: |
-                  beardist update-tap
+  update:
+    runs-on: linux-amd64
+    container:
+      image: ghcr.io/bearcove/beardist:latest
+      volumes:
+        - /var/persistent-build-storage:/var/persistent-build-storage
+      credentials:
+        username: "token"
+        password: "${{ secrets.BEARCOVE_PULL_PASSWORD }}"
+    env:
+      BEARDIST_CACHE_DIR: /var/persistent-build-storage/beardist-cache
+      FORGEJO_READWRITE_TOKEN: ${{ secrets.FORGEJO_READWRITE_TOKEN }}
+      CLICOLOR: 1
+      CLICOLOR_FORCE: 1
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Build
+        shell: bash
+        run: |
+          beardist update-tap
