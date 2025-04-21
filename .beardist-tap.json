@@ -1,0 +1,35 @@
+{
+  "formulas": [
+    {
+      "repo": "bearcove/beardist",
+      "homepage": "https://github.com/bearcove/beardist",
+      "desc": "Wrapper around cargo, ships bearcove binaries",
+      "license": "Proprietary",
+      "bins": ["beardist"]
+    },
+    {
+      "repo": "bearcove/home",
+      "homepage": "https://github.com/bearcove/home",
+      "desc": "A cozy content authoring experience",
+      "license": "Proprietary",
+      "bins": ["home"],
+      "deps": [
+        "dav1d",
+        "ffmpeg#recommended",
+        "uv#recommended",
+        "imagemagick#recommended",
+        "node#recommended",
+        "pnpm#recommended",
+        "bearcove/tap/home-drawio"
+      ]
+    },
+    {
+      "repo": "bearcove/home-drawio",
+      "homepage": "https://github.com/bearcove/home-drawio",
+      "desc": "draw.io to svg diagram converter for home",
+      "license": "Proprietary",
+      "bins": ["home-drawio"],
+      "deps": []
+    }
+  ]
+}
