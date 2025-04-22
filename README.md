@@ -1,4 +1,4 @@
-# tap
+# homebrew-tap
 
 The bearcove tap, where [homebrew](https://brew.sh) formulas are stored :)
 
@@ -10,13 +10,13 @@ The bearcove tap, where [homebrew](https://brew.sh) formulas are stored :)
 Add the tap:
 
 ```bash
-brew tap bearcove/tap https://github.com/bearcove/tap
+brew tap bearcove/tap
 ```
 
 Then install a formula:
 
 ```bash
-brew install bearcove/tap/snug
+brew install bearcove/tap/home
 ```
 
 ## Uninstall
@@ -24,6 +24,6 @@ brew install bearcove/tap/snug
 Uninstall using homebrew:
 
 ```bash
-brew uninstall bearcove/tap/snug
+brew uninstall bearcove/tap/home
 brew untap bearcove/tap
 ```
