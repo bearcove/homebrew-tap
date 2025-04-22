@@ -4,21 +4,21 @@
 class HomeDrawio < Formula
   desc "draw.io to svg diagram converter for home"
   homepage "https://github.com/bearcove/home-drawio"
-  version "1.0.2"
+  version "1.0.3"
   license "Proprietary"
 
 
   if OS.mac?
-    url "https://github.com/bearcove/home-drawio/releases/download/v1.0.2/aarch64-apple-darwin.tar.xz"
-    sha256 "7deae1f8ae35ac5e1b45ec88c9ae2aee9f577898e0334f24ad7f442717a7040d"
+    url "https://github.com/bearcove/home-drawio/releases/download/v1.0.3/aarch64-apple-darwin.tar.xz"
+    sha256 "8e4bd2290fbe4d98ea26a9118cdb8316b650379ee6162bb0a0c7e37ee7dd349e"
   elsif OS.linux?
     on_intel do
-      url "https://github.com/bearcove/home-drawio/releases/download/v1.0.2/x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c551a29df1918e773ac079b99d1f59a921843dee6f061318292cd9c77ee71ae1"
+      url "https://github.com/bearcove/home-drawio/releases/download/v1.0.3/x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "4b333f9ef7ce81b38ab79f995c6f1e69ddcfacc3f3e909fcabb19ec2acad6622"
     end
     on_arm do
-      url "https://github.com/bearcove/home-drawio/releases/download/v1.0.2/aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5d0dccb2144de5f07a16e4c812498a9753fda9bc715a3bcc8d966f2a33fd1929"
+      url "https://github.com/bearcove/home-drawio/releases/download/v1.0.3/aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "dd69dfd7be71c81425e5b15f5b1da33df8eb1991e23250caa4837230e64fb534"
     end
   end
 
