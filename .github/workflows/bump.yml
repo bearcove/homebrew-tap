@@ -18,4 +18,5 @@ jobs:
       - name: Build
         shell: bash
         run: |
+          git config --global --add safe.directory /__w/homebrew-tap/homebrew-tap
           beardist update-tap
