@@ -4,7 +4,7 @@
 class Home < Formula
   desc "A cozy content authoring experience"
   homepage "https://github.com/bearcove/home"
-  version "2.1.0"
+  version "2.2.0"
   license "Proprietary"
 
   depends_on "dav1d"
@@ -16,16 +16,16 @@ class Home < Formula
   depends_on "bearcove/tap/home-drawio"
 
   if OS.mac?
-    url "https://github.com/bearcove/home/releases/download/v2.1.0/aarch64-apple-darwin.tar.xz"
-    sha256 "0ae6ff8e288de6e5ab8334f41ad657013dd82b49b8ffd78a7601922390234ae3"
+    url "https://github.com/bearcove/home/releases/download/v2.2.0/aarch64-apple-darwin.tar.xz"
+    sha256 "625240a524c8ac5b195fb735e819ad593727cfceac3aa3acf485fce6ed771b9f"
   elsif OS.linux?
     on_intel do
-      url "https://github.com/bearcove/home/releases/download/v2.1.0/x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "58db645029c12cdb5a69a2810cf0b46d30a0069fee5e39062eb7e01ba7555b18"
+      url "https://github.com/bearcove/home/releases/download/v2.2.0/x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "073856bd968122bdd119ae397786e6dd023af78c38169498803faf5acefa72ec"
     end
     on_arm do
-      url "https://github.com/bearcove/home/releases/download/v2.1.0/aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2a8ba357064efcbdf729025067212d2a481754a435b27f74312f79fd252f35aa"
+      url "https://github.com/bearcove/home/releases/download/v2.2.0/aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "299c1cb71863989570eeeba42e4150b618ff4001ba68d5042159c4cf20cee8eb"
     end
   end
 
