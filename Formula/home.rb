@@ -31,6 +31,7 @@ class Home < Formula
 
   def install
     bin.install "home"
+    bin.install "home-*"
     libexec.install Dir["lib*.dylib"] if OS.mac?
     libexec.install Dir["lib*.so"] if OS.linux?
   end
