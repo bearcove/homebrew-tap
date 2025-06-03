@@ -31,7 +31,10 @@ class Home < Formula
 
   def install
     bin.install "home"
-    bin.install "home-*"
+    bin.install "home-mom"
+    bin.install "home-serve"
+    bin.install "home-term"
+    bin.install "home-init"
     libexec.install Dir["lib*.dylib"] if OS.mac?
     libexec.install Dir["lib*.so"] if OS.linux?
   end
