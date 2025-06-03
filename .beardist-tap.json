@@ -5,7 +5,7 @@
       "homepage": "https://github.com/bearcove/home",
       "desc": "A cozy content authoring experience",
       "license": "Proprietary",
-      "bins": ["home", "home-*"],
+      "bins": ["home", "home-mom", "home-serve", "home-term", "home-init"],
       "deps": [
         "dav1d",
         "ffmpeg#recommended",
