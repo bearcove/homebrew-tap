@@ -1,24 +1,24 @@
 class Dodeca < Formula
   desc "A fully incremental static site generator"
   homepage "https://github.com/bearcove/dodeca"
-  version "0.10.1"
+  version "0.11.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/bearcove/dodeca/releases/download/v0.10.1/dodeca-aarch64-apple-darwin.tar.xz"
-      sha256 "cd6ae21344b77a0065b728cd6cd4999bd0045712d41f54c4234e66eb3aa168c0"
+      url "https://github.com/bearcove/dodeca/releases/download/v0.11.0/dodeca-aarch64-apple-darwin.tar.xz"
+      sha256 "e65ca3ee03075aa43bc188681a01aa07b26b69e4ea906aba8d1f31bfb736ff6d"
     end
     on_intel do
-      url "https://github.com/bearcove/dodeca/releases/download/v0.10.1/dodeca-aarch64-apple-darwin.tar.xz"
-      sha256 "cd6ae21344b77a0065b728cd6cd4999bd0045712d41f54c4234e66eb3aa168c0"
+      url "https://github.com/bearcove/dodeca/releases/download/v0.11.0/dodeca-aarch64-apple-darwin.tar.xz"
+      sha256 "e65ca3ee03075aa43bc188681a01aa07b26b69e4ea906aba8d1f31bfb736ff6d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/bearcove/dodeca/releases/download/v0.10.1/dodeca-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "820387d13769ac588d1ccae6461eb6038b466f8a7843b655399b05a0aa69723e"
+      url "https://github.com/bearcove/dodeca/releases/download/v0.11.0/dodeca-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "745d5869ccbf440c643381174e8c4e7bb3cf4d9d904e343c2bcf803fe3bfc785"
     end
   end
 
