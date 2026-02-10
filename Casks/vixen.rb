@@ -1,6 +1,6 @@
 cask "vixen" do
-  version "0.2.0"
-  sha256 "a6072f1dfea0f659e1448494e6b1d65fceed113989e737b48139638be5366205"
+  version "0.3.0"
+  sha256 "e0b83c0bac11e03b819d0de7c74744818b8f8cb007d358b7b811461008e26e79"
 
   url "https://github.com/bearcove/vixen-mac-app/releases/download/v#{version}/Vixen-#{version}.dmg"
   name "Vixen"
